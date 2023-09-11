@@ -45,4 +45,6 @@ Before you can use this program, ensure you have the following prerequisites ins
     ```shell
     cargo run
     ```
+## License
 
+This project is licensed under the MIT License - see the LICENSE file for details.
