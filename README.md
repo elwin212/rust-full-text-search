@@ -1,6 +1,6 @@
 # Simple Full-Text Search in Rust
 
-This Rust program is a simple full-text search tool designed to search through Wikimedia dump data. It provides a straightforward way to index and search through text documents contained within the Wikimedia dump. This README provides an overview of the program, its usage, and how to get started.
+This Rust program is a simple full-text search engine designed to search through Wikimedia dump data. It provides a straightforward way to index and search through text documents contained within the Wikimedia dump. This README provides an overview of the program, its performance, and how to get started.
 
 ## Table of Contents
 - [Features](#features)
