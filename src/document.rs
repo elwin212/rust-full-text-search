@@ -30,6 +30,10 @@ pub struct Documents {
     pub doc: Vec<Item>
 }
 
+impl Documents {
+    
+}
+
 
 pub fn load_file(file_str: &str) -> Result<Documents, io::Error> {
     let path = Path::new(&file_str);
