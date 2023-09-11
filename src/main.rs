@@ -1,6 +1,4 @@
 use std::io;
-extern crate quick_xml;
-
 
 mod document;
 mod searchdata;
