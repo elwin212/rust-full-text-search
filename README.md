@@ -29,12 +29,10 @@ Before you can use this program, ensure you have the following prerequisites ins
 
    ```shell
    git clone https://github.com/elwin212/rust-full-text-search.git
-
    ```
 2. Navigate to the project directory:
-   ```
+   ```shell
    cd rust-full-text-search
-
    ```
 
 3. Download the Wikipedia dump dataset from [Wikimedia Downloads](https://dumps.wikimedia.org/).
@@ -44,8 +42,7 @@ Before you can use this program, ensure you have the following prerequisites ins
 5. Put the dataset you just downloaded into data folder and name it data.xml
 
 6. Run the project:
-    ```
+    ```shell
     cargo run
-
     ```
 
