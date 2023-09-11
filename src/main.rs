@@ -1,9 +1,5 @@
-use std::collections::{HashMap, HashSet};
 use std::io;
 extern crate quick_xml;
-use std::time::Instant;
-
-use regex::Regex;
 
 
 mod document;
