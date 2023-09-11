@@ -20,7 +20,11 @@ This project is inspired by [Artem Krylysov](https://github.com/akrylysov?tab=re
 ## What-You-Need-To-Know
 
 In this project, I just implemented a full-text-search engine with basic operation, if you want to build a fully functional engine,
-you might need more advanced features such as Relevance Ranking: Implement advanced ranking algorithms, like TF-IDF (Term Frequency-Inverse Document Frequency) or BM25, to provide more accurate and context-aware search results.
+you might need more advanced features such as 
+
+### Relevance Ranking:
+ 
+Implement advanced ranking algorithms, like TF-IDF (Term Frequency-Inverse Document Frequency) or BM25, to provide more accurate and context-aware search results.
 
 ### Faceted Search:
 
