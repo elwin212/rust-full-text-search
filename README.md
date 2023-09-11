@@ -19,6 +19,53 @@ This project is inspired by [Artem Krylysov](https://github.com/akrylysov?tab=re
 
 ## What-You-Need-To-Know
 
+In this project, I just implemented a full-text-search engine with basic operation, if you want to build a fully functional engine,
+you might need more advanced features such as Relevance Ranking: Implement advanced ranking algorithms, like TF-IDF (Term Frequency-Inverse Document Frequency) or BM25, to provide more accurate and context-aware search results.
+
+### Faceted Search:
+
+Enable users to filter and refine search results by various attributes or categories, making it easier to find specific content.
+
+### Query Suggestions: 
+
+Implement query auto-suggestions based on user input to help users refine their search queries.
+
+### Spell Correction: 
+
+Integrate spell-check and correction functionality to handle typos and misspellings in search queries.
+
+### Synonym Handling: 
+
+Support synonyms and related term searches to broaden search results and improve user experience.
+
+### Phrase Searching: 
+
+Allow users to search for exact phrases by preserving word order and proximity.
+
+### Language Support: 
+
+Extend language support and implement language-specific tokenization and stemming algorithms.
+
+### Scalable Indexing: 
+
+Optimize the indexing process for handling large datasets efficiently. Implement incremental or distributed indexing as needed.
+
+### Cross-Language Search: 
+
+Enable searching across multiple languages by implementing language detection and translation features.
+
+### Geo-Spatial Search: 
+
+Add geospatial search capabilities, allowing users to find content based on location or geographic coordinates.
+
+### Real-Time Index Updates: 
+
+Support real-time updates to the search index to keep data current and responsive to changes.
+
+### Content Highlighting: 
+
+Highlight search query matches within search results to provide users with context.
+
 ## Prerequisites
 
 Before you can use this program, ensure you have the following prerequisites installed:
