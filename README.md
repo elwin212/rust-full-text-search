@@ -14,7 +14,6 @@ This project is inspired by [Artem Krylysov](https://github.com/akrylysov?tab=re
 
 - Indexing of text documents from Wikimedia dumps.
 - Fast and efficient full-text search capability.
-- Command-line interface for ease of use.
 - Support for custom queries and filters.
 
 ## Prerequisites
