@@ -80,7 +80,7 @@ Full-text search is a powerful and efficient way to search through large amount 
    Elapsed: 15.201000µs
    ```
 In this case (using google as input), the first and second methods take about ~100 ms, while the full-text search takes only 15.2 µs.
-This is approximately 86,666.67 times faster!
+This is approximately 8,666.667 times faster!
 
 ## License
 
