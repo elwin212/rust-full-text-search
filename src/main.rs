@@ -40,7 +40,7 @@ fn performance_comparison(documents: document::Documents, inverted_index: HashMa
                     let elapsed = now.elapsed();
                     for ids in result1 {
                         let i32_ids = ids as i32;
-                        println!("Result using string contains: {:?}", documents.doc.get(i32_ids as usize).unwrap().title);
+                        println!("Results using string contains: {:?}", documents.doc.get(i32_ids as usize).unwrap().title);
                     }                        
                     println!("Elapsed: {:.6?}", elapsed);
 
@@ -50,7 +50,7 @@ fn performance_comparison(documents: document::Documents, inverted_index: HashMa
                     let elapsed = now.elapsed();
                     for ids in result2 {
                         let i32_ids = ids as i32;
-                        println!("Result using regex: {:?}", documents.doc.get(i32_ids as usize).unwrap().title);
+                        println!("Results using regex: {:?}", documents.doc.get(i32_ids as usize).unwrap().title);
                     }
                     println!("Elapsed: {:.6?}", elapsed);  
                     let tokenized = document::tokenize(&input);
@@ -63,7 +63,7 @@ fn performance_comparison(documents: document::Documents, inverted_index: HashMa
                             if inverted_index.contains_key(&token) {
                                 
                                 for id in inverted_index.get(&token).unwrap() {
-                                    println!("Result: {:?}", index_docs.get(id).unwrap().title);
+                                    println!("Results using full-text-search: {:?}", index_docs.get(id).unwrap().title);
                                 }
                             } else {
                                 println!("No results found");
