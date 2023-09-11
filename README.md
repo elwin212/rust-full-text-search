@@ -6,8 +6,6 @@ This Rust program is a simple full-text search tool designed to search through W
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -45,6 +43,44 @@ Before you can use this program, ensure you have the following prerequisites ins
     ```shell
     cargo run
     ```
+## Performance
+
+In this section, we'll compare the performance of three different title search methods: string contains, regex, and full-text search.
+The Wikipedia dump contains over 600K data and it should be a good case to test the performance.
+Here I will use word "google" as the input.
+
+### String Contains Search
+
+String contains search involves searching for a substring within the title. This method is simple and straightforward but may not be the most efficient for large datasets.
+
+```shell
+Results using string contains: "Wikipedia: United States v. Google LLC (2023)"
+Results using string contains: "Wikipedia: Google Silicon Initiative"
+Elapsed: 129.966060ms
+```
+
+
+### Regex Search
+
+Regex search allows for more complex pattern matching in titles. While it provides flexibility, it can be slower than string contains search, especially for complex regex patterns or large datasets.
+
+```shell
+Results using regex: "Wikipedia: United States v. Google LLC (2023)"
+Results using regex: "Wikipedia: Google Silicon Initiative"
+Elapsed: 96.607663ms
+```
+
+### Full-Text Search
+
+Full-text search is a powerful and efficient way to search through large amount of text. It indexes the dataset and uses advanced algorithms to find relevant text quickly. This method is recommended for large datasets and complex queries.
+   ```
+   Results using full-text-search: "Wikipedia: United States v. Google LLC (2023)"   
+   Results using full-text-search: "Wikipedia: Google Silicon Initiative"
+   Elapsed: 15.201000µs
+   ```
+In this case (using google as input), the first and second methods take about ~100 ms, while the full-text search takes only 15.2 µs.
+This is approximately 86,666.67 times faster!
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
