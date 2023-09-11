@@ -1,0 +1,15 @@
+[package]
+name = "fts"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+rust-stemmers = "1.2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde-xml-rs = "0.6.0"
+quick-xml = "0.30.0"
+strip_markdown = "0.2.0"
+regex = "1.9.5"
