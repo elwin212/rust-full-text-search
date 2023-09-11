@@ -74,13 +74,16 @@ Elapsed: 96.607663ms
 ### Full-Text Search
 
 Full-text search is a powerful and efficient way to search through large amount of text. It indexes the dataset and uses advanced algorithms to find relevant text quickly. This method is recommended for large datasets and complex queries.
-   ```
-   Results using full-text-search: "Wikipedia: United States v. Google LLC (2023)"   
-   Results using full-text-search: "Wikipedia: Google Silicon Initiative"
-   Elapsed: 15.201000µs
-   ```
+
+```shell
+Results using full-text-search: "Wikipedia: United States v. Google LLC (2023)"   
+Results using full-text-search: "Wikipedia: Google Silicon Initiative"
+Elapsed: 15.201000µs
+```
+
 In this case (using google as input), the first and second methods take about ~100 ms, while the full-text search takes only 15.2 µs.
-This is approximately 8,666.667 times faster!
+This is approximately 8,500 times faster!
+But to be honest, I believe that matching all the titles using regex in under 200ms across over 600K documents is quite fast. I think this is one of the reasons why many people consider Rust to be a 'fast' language.
 
 ## License
 
