@@ -6,6 +6,7 @@ This Rust program is a simple full-text search tool designed to search through W
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Performance](#performance)
 - [License](#license)
 
 ## Features
