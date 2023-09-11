@@ -6,6 +6,7 @@ This project is inspired by [Artem Krylysov](https://github.com/akrylysov?tab=re
 ## Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
+- [What You Need To Know](#what-you-need-to-know)
 - [Installation](#installation)
 - [Performance](#performance)
 - [License](#license)
@@ -15,6 +16,8 @@ This project is inspired by [Artem Krylysov](https://github.com/akrylysov?tab=re
 - Indexing of text documents from Wikimedia dumps.
 - Fast and efficient full-text search capability.
 - Support for custom queries and filters.
+
+## What-You-Need-To-Know
 
 ## Prerequisites
 
@@ -81,9 +84,9 @@ Results using full-text-search: "Wikipedia: Google Silicon Initiative"
 Elapsed: 15.201000µs
 ```
 
-In this case (using google as input), the first and second methods take about ~100 ms, while the full-text search takes only 15.2 µs.
-This is approximately 8,500 times faster!
-But to be honest, I believe that matching all the titles using regex in under 200ms across over 600K documents is quite fast. I think this is one of the reasons why many people consider Rust to be a 'fast' language.
+In this case (using *google* as input), the first and second methods take about *~100 ms*, while the full-text search takes only *15.2 µs*.
+This is approximately **8,500** times faster!
+But to be honest, I believe that matching all the titles using regex in under *200ms* across over 600K documents is quite fast. I think this is one of the reasons why many people consider Rust to be a 'fast' language.
 
 ## License
 
